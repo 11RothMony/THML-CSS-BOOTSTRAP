@@ -1,0 +1,284 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+}
+body{
+    font-family: 'Hanuman', serif;
+    /* font-family: 'Koulen', cursive; */
+}
+.container-logo{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.box-logo{
+    width: 85%;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.box-logo .logo{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.box-logo .logo img{
+    display: block;
+    width: 80px;
+    height: 80px;
+
+}
+.box-logo .ads{
+    width: 60%;
+}
+.box-logo .ads img{
+    width: 100%;
+    height: 100%;
+}
+.container-menu{
+    background-color: crimson;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container-menu .menu{
+    width: 85%;
+}
+.container-menu .menu ul {
+    display: flex;
+}
+.container-menu .menu ul li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-family: 'Koulen', cursive;
+    font-size: 18px;
+    color: white;
+}
+.container-menu .menu ul li a:hover{
+    color: black;
+}
+.container-body{
+    width: 85%;
+    margin: auto;
+    display: flex;  
+    margin-top: 7px; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container-body .slide-box{
+    width: 70%;
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+.slide-box .box1{
+    width: 60%;
+    background-color: violet;
+    height: 250px;
+    position: relative;
+}
+.slide-box .box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide-box .title-box1{
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding: 2px;
+    padding-right: 20px;
+    top: 5px;
+    -webkit-clip-path:polygon( 0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+    font-family: 'Koulen', cursive;
+}
+.slide-box .box1 .time-box , .slide-box .box2 .time-box {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    font-size: 11px;  
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.405));
+}
+.slide-box .box1 .time-box p, .slide-box .box2 .time-box p{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+}
+.slide-box .box1 .title-box2, .slide-box .box2 .title-box2{
+    position: absolute;
+    bottom: 0px;
+    background-image: linear-gradient(to top, rgb(0, 0, 0),rgba(0, 0, 0, 0));
+    padding: 10px;
+    font-size: 5px;
+}
+.slide-box .box1 .title-box2 h1, .slide-box .box2 .title-box2 h1{  
+    color: white;
+    font-size: 17px;
+    font-family: 'Koulen', cursive;
+    padding: 10px;
+    text-align: center;
+}
+.slide-box .box1:hover .title-box2 h1, .slide-box .box2:hover .title-box2 h1{
+    color: red;
+    font-family: 'Koulen', cursive;
+}
+
+
+.slide-box .box1 .title-box2 p, .slide-box .box2 .title-box2 p{
+    font-size: 15px;
+    margin: 0%;
+    color: white;
+    visibility: hidden;
+}
+.slide-box .box1:hover .title-box2 p, .slide-box .box2:hover .title-box2 p{
+    visibility: visible;
+}
+.slide-box .box1:hover .title-box2, .slide-box .box2:hover .title-box2 {
+    bottom:  35px;
+    transition: 0.5s;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.237),rgba(0, 0, 0, 0));
+}
+.slide-box .box2{
+    width: 40%;
+    height: 250px;
+    background-color: pink;
+    position: relative;
+}
+.slide-box .box2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide-box .box1::before, .slide-box .box2::before{
+    content:" ";
+    background-color: rgba(0, 0, 0, 0.298);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.3s;
+}
+.slide-box .box1:hover::before, .slide-box .box2:hover::before{
+    /* background-color: rgba(0, 0, 0, 0.514); */
+    background-image:linear-gradient(to top,black,rgba(46, 11, 11, 0));
+}
+.container-body .ads-box{
+    width: 29%;
+}
+.ads-box .box1{
+    height: 245px;
+    width: 100%;
+    position: relative;
+}
+.ads-box .box1 img{
+    width: 100%;
+    height: 100%;
+}
+.ads-box .box2{
+    height: 245px;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+.ads-box .box2 img{
+    width: 100%;
+    height: 100%
+}
+.container-body2{
+    width: 100%;
+}
+.container-body2 .content-box {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    border-bottom: 3px solid blue;
+}
+.container-body2 .content-box h2{
+    background-color: blue;
+    padding: 8px;
+    padding-right: 25px;
+    font-size: 20px;
+    -webkit-clip-path:polygon( 0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.container-body2 .container-item-box{
+    overflow: hidden;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.558);
+
+}
+.container-item-box .item-box1{
+    width: 30%;
+    height: 500px;
+    background-color: whitesmoke;
+}
+.container-item-box .item-box1 .img-box{
+    height: 60%;
+    width: 100%;
+    background-color: red;
+}
+.container-item-box .item-box1 .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-item-box .item-box1 .img-box:hover img{
+   border: 5px solid rgba(0, 0, 0, 0.929);
+   box-sizing: border-box;
+}
+.container-item-box .item-box1 .title-box{
+    height: 40%;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.776);
+    padding: 15px;
+    box-sizing: border-box;
+}
+.container-item-box .item-box1 .title-box h3{
+    color: white;
+    font-size: 20px;
+}
+.container-item-box .item-box2{
+    width: 69%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item-box2 .item-box1{
+    width: 24%;
+    height: 245px;
+}
+.item-box2 .item-box1 .pic-box{
+    width: 100%;
+    height: 50%;
+}
+.item-box2 .item-box1 .pic-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.item-box2 .item-box1 .pic-box:hover img{
+    border: 5px solid rgba(255, 255, 255, 0.383);
+    box-sizing: border-box;
+}
+.item-box2 .item-box1 .text-box{
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.item-box2 .item-box1 .text-box p{
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
